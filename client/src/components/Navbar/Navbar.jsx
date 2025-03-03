@@ -16,7 +16,7 @@ const Navbar = ({ onSearch }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/categories')
+    fetch('https://herbsphereproject-3.onrender.com/api/categories')
       .then(response => response.json())
       .then(data => setCategories(data))
       .catch(error => console.error('Error fetching categories:', error));

@@ -9,7 +9,7 @@ const PlantCard = ({ plant }) => {
   useEffect(() => {
     const checkFavorite = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/check-favorite', {
+        const response = await fetch('https://herbsphereproject-3.onrender.com/api/check-favorite', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -30,7 +30,7 @@ const PlantCard = ({ plant }) => {
   const toggleFavorite = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/toggle-favorite', {
+      const response = await fetch('https://herbsphereproject-3.onrender.com/api/toggle-favorite', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,

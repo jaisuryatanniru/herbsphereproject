@@ -17,7 +17,7 @@ const Category = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/plants/category/${categoryName}`)
+    fetch(`https://herbsphereproject-3.onrender.com/api/plants/category/${categoryName}`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched Data:', data); 

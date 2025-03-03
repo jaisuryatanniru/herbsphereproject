@@ -12,7 +12,7 @@ function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/register', { name, email, password })
+        axios.post('https://herbsphereproject-3.onrender.com/register', { name, email, password })
             .then(result => {
                 if (result.data === "Success") {
                     navigate('/login');

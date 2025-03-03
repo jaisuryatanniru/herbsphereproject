@@ -11,7 +11,7 @@ function NewHome() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/plants')
+    fetch('https://herbsphereproject-3.onrender.com/api/plants')
       .then((response) => response.json())
       .then((data) => {
         const categorizedPlants = data.reduce((acc, plant) => {

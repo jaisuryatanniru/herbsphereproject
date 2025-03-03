@@ -29,7 +29,7 @@ const Quiz = () => {
   const fetchQuiz = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/quiz", {
+      const res = await axios.get("https://herbsphereproject-3.onrender.com/api/quiz", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

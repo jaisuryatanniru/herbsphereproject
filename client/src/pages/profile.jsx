@@ -16,7 +16,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/userinfo', {
+        const response = await axios.get('https://herbsphereproject-3.onrender.com/api/userinfo', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
@@ -43,7 +43,7 @@ const Profile = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/change-password', {
+      const response = await axios.post('https://herbsphereproject-3.onrender.com/api/change-password', {
         oldPassword,
         newPassword
       }, {

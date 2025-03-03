@@ -24,7 +24,7 @@ const PlantDetails = () => {
   useEffect(() => {
     const fetchPlantDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/plants/${id}`);
+        const response = await axios.get(`https://herbsphereproject-3.onrender.com/api/plants/${id}`);
         setPlant(response.data);
         setLoading(false);
       } catch (error) {
@@ -36,7 +36,7 @@ const PlantDetails = () => {
     const checkCartStatus = async () => {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/check-cart',
+          'https://herbsphereproject-3.onrender.com/api/check-cart',
           { plantId: id },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
@@ -49,7 +49,7 @@ const PlantDetails = () => {
     const checkOrdersStatus = async () => {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/check-orders',
+          'https://herbsphereproject-3.onrender.com/api/check-orders',
           { plantId: id },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
@@ -62,7 +62,7 @@ const PlantDetails = () => {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:5000/api/userinfo',
+          'https://herbsphereproject-3.onrender.com/api/userinfo',
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
         setUsername(response.data.name);
@@ -80,7 +80,7 @@ const PlantDetails = () => {
   
   const addToCart = () => {
     axios.post(
-      'http://localhost:5000/api/cart/add',
+      'https://herbsphereproject-3.onrender.com/api/cart/add',
       { plantId: id },
       { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
     )
@@ -96,7 +96,7 @@ const PlantDetails = () => {
   
   const addToOrders = () => {
     axios.post(
-      'http://localhost:5000/api/orders/add',
+      'https://herbsphereproject-3.onrender.com/api/orders/add',
       { plantId: id },
       { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
     )
@@ -112,7 +112,7 @@ const PlantDetails = () => {
   
   const removeFromCart = () => {
     axios.post(
-      'http://localhost:5000/api/cart/remove',
+      'https://herbsphereproject-3.onrender.com/api/cart/remove',
       { plantId: id },
       { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
     )

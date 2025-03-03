@@ -6,7 +6,7 @@ const PlantList = () => {
   const [plants, setPlants] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/plants')
+    axios.get('https://herbsphereproject-3.onrender.com/api/plants')
       .then(response => {
         setPlants(response.data);
       })
