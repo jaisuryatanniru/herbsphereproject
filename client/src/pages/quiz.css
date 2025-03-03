@@ -102,7 +102,7 @@ h2 {
 /* Submit Button */
 .submit-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 120px;
   right: 20px;
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -247,7 +247,8 @@ h2 {
 
   .submit-btn {
     padding: 10px 20px; /* Further reduced padding for very small screens */
-    font-size: 0.9rem; /* Further reduced font size for very small screens */
+    font-size: 0.9rem;
+    margin-bottom: -20px; /* Further reduced font size for very small screens */
   }
 
   .result h3 {
