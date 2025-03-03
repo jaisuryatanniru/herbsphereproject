@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+
+
+.input-box1 {
+    margin-bottom: 15px;
+}
+
+.input-box1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.input-box1 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: black;
+}
+
+.sub-btn1 {
+    width:100%;
+    padding: 10px;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    
+    
+}
+
+.sub-btn1:hover {
+    background-color: #3700b3;
+}
+
+.next-btn1 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #03dac6;
+    border: none;
+    border-radius: 4px;
+    color: #121212;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.next-btn1:hover {
+    background-color: #018786;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-box1 label {
+        font-size: 15px; /* Slightly reduced font size */
+    }
+
+    .input-box1 input {
+        padding: 10px; /* Slightly reduced padding */
+        font-size: 15px; /* Slightly reduced font size */
+    }
+
+    .sub-btn1, .next-btn1 {
+        padding: 10px; /* Slightly reduced padding */
+        font-size: 16px; /* Slightly reduced font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .input-box1 label {
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .input-box1 input {
+        padding: 8px; /* Further reduced padding */
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .sub-btn1, .next-btn1 {
+        padding: 8px; /* Further reduced padding */
+        font-size: 14px; /* Further reduced font size */
+    }
+}
+
+
+
+
+

@@ -1,0 +1,122 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .container span {
+    left: 0;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2f8d46;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .team-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    text-align: left;
+    max-width: 950px;
+    padding: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 24px;
+    color: #2f8d46;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #22843ac5;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 5px solid #2f8d46;
+  }
+
+  .garden{
+    height:300px;
+    width:300px;
+  }
+  
+  /* Responsive CSS for Mobile */
+  @media (max-width: 767px) {
+
+    .header{
+        padding:5px;
+    }
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .about-content h2 {
+      font-size: 20px;
+    }
+  
+    .about-content p {
+      font-size: 12px;
+    }
+  
+    .about-content ul li {
+      font-size: 12px;
+    }
+  }
+  
+  /* Responsive CSS for Tablet and Desktop */
+  @media (min-width: 768px) {
+    .about-section {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .team-image {
+      width: 50%;
+    }
+  
+    .about-content {
+      width: 50%;
+    }
+  }

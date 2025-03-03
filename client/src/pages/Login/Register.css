@@ -1,0 +1,154 @@
+
+
+
+
+
+.container-register {
+    margin-left: 33%;
+    margin-top: 8%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 100%;
+
+}
+
+.box-register {
+  
+    background: #d7ffda;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(209, 50, 50, 0.895);
+    width: 100%;
+    max-width: 400px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-register h2 {
+
+    margin-bottom: 20px;
+    color: #58be97;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    color: black;
+}
+
+.sub-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sub-btn:hover {
+    background-color: #3700b3;
+}
+
+.next-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #03dac6;
+    border: none;
+    border-radius: 4px;
+    color: #121212;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.next-btn:hover {
+    background-color: #018786;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-register {
+        margin: 10% auto; /* Adjust margin for smaller screens */
+        width: 80%; /* Increase width for better use of space */
+    }
+
+    .box-register {
+        padding: 20px; /* Slightly reduced padding */
+    }
+
+    .box-register h2 {
+        font-size: 22px; /* Slightly reduced font size */
+    }
+
+    .input-box label {
+        font-size: 15px; /* Slightly reduced font size */
+    }
+
+    .input-box input {
+        padding: 10px; /* Slightly reduced padding */
+        font-size: 15px; /* Slightly reduced font size */
+    }
+
+    .sub-btn, .next-btn {
+        padding: 10px; /* Slightly reduced padding */
+        font-size: 16px; /* Slightly reduced font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-register {
+        margin: 15% auto; /* Adjust margin for very small screens */
+        width: 90%; /* Use more width */
+    }
+
+    .box-register {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .box-register h2 {
+        font-size: 20px; /* Further reduced font size */
+    }
+
+    .input-box label {
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .input-box input {
+        padding: 8px; /* Further reduced padding */
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .sub-btn, .next-btn {
+        padding: 8px; /* Further reduced padding */
+        font-size: 14px; /* Further reduced font size */
+    }
+}

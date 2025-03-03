@@ -1,0 +1,121 @@
+
+.card {
+    background-color: white;
+    height:410px;
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 18px;
+    padding: 28px;
+    border-radius: 18px;
+    border: 2px solid var(--primary-color);   
+  }
+  .card:hover {
+    box-shadow: 5px 8px 8px rgba(4, 117, 8, 0.966);
+    transform: scale3d(1, 1, 1); 
+  }
+  .card img {
+    border-radius: 5%;
+    width:210px;
+    height:180px;
+  }
+  .card .card-content {
+    width: 230px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card .card-content h3 {
+    font-size: 22px;
+    color:rgb(24, 197, 24);
+    text-transform: uppercase;
+    color: rgb(43, 50, 43);
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .card .card-content p {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    font-weight: 400;
+    
+  }
+  .card-content{
+    overflow: hidden;
+  }
+  .card .card-content p span {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+  }
+  .list{
+    list-style-type: none;
+  }
+
+  .heart-icon {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .heart-icon {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    fill: white;
+  }
+  
+  .card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+     
+  .heart-icon {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+  }
+  .heart-icon-inline {
+    margin-left: 10px; 
+    cursor: pointer;
+  }     
+
+  .details-link {
+    text-decoration: none;
+    color: #007bff;
+    /* Other styling for the details link */
+  }
+  

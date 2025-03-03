@@ -1,0 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.quiz-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1B5E20;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #1B5E20;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1B5E20;
+  transition: width 0.3s ease;
+}
+
+/* Question Styles */
+.question {
+  margin: 20px 0;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+  font-size: 1.4rem;
+  color: #1B5E20;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.option-btn {
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #1B5E20;
+  background-color: #E8F5E9;
+  border: 2px solid #1B5E20;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #54cb5c;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+.option-btn.selected {
+  background-color: #1B5E20;
+  color: #FFFFFF;
+  border-color: #1B5E20;
+}
+
+/* Submit Button */
+.submit-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #060606;
+  background-color: #fd9b07;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #FFC107;
+  transform: translateY(-3px);
+}
+
+/* Result Styles */
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #1B5E20;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 1.2rem;
+  color: #1B5E20;
+}
+
+.result p span {
+  font-weight: bold;
+  color: #1B5E20;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.option-btn, .submit-btn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Confetti Animation */
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+  }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #FFD700;
+  animation: confetti 2s ease-out;
+}
+
+/* Gradient Wave Animation */
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.result {
+  position: relative;
+  overflow: hidden;
+}
+
+.result::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1B5E20, #4CAF50, #8BC34A);
+  background-size: 200% 200%;
+  animation: wave 5s ease infinite;
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 15px;
+} 
+
+
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .options {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  .quiz-container {
+    padding: 15px; /* Further reduced padding for very small screens */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Further reduced font size for very small screens */
+  }
+
+  .question p {
+    font-size: 1.1rem; /* Further reduced font size for very small screens */
+  }
+
+  .option-btn {
+    padding: 10px; /* Further reduced padding for very small screens */
+    font-size: 0.9rem; /* Further reduced font size for very small screens */
+  }
+
+  .submit-btn {
+    padding: 10px 20px; /* Further reduced padding for very small screens */
+    font-size: 0.9rem; /* Further reduced font size for very small screens */
+  }
+
+  .result h3 {
+    font-size: 1.3rem; /* Further reduced font size for very small screens */
+  }
+
+  .result p {
+    font-size: 0.9rem; /* Further reduced font size for very small screens */
+  }
+}

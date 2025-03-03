@@ -1,0 +1,75 @@
+/* Base styles */
+.bookmark-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between the arrow and the heading */
+    margin-bottom: 20px;
+}
+
+.header1 h1 {
+    font-size: 24px;
+    color: #121111;
+    text-align: center;
+    margin: auto;
+}
+
+.arrow1 {
+    cursor: pointer;
+    color: #2f8d46;
+}
+
+.plant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.no-favorites {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .header{
+        padding: 0px;
+
+    }
+    .header1 h1 {
+        font-size: 10px;
+        margin-top: -40px;
+        margin-left: 30px;
+    }
+
+    .plant-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .header1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header1 h1 {
+        font-size: 18px;
+    }
+
+    .plant-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .no-favorites {
+        font-size: 16px;
+    }
+}

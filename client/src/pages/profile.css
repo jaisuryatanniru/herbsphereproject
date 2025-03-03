@@ -1,0 +1,126 @@
+.profile-card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%; /* Full width on mobile */
+  max-width: 500px; /* Limit maximum width for larger screens */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin: 10% auto; /* Center the card */
+}
+
+.profile-card.expanded {
+  width: 90%; /* Full width on mobile */
+  max-width: 450px; /* Limit maximum width for larger screens */
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff4d4d;
+  font-size: 20px;
+}
+
+.profile-icon-container {
+  margin-bottom: 15px;
+}
+
+.profile-icon {
+  color: #4CAF50;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-actions {
+  margin-top: 20px;
+}
+
+.profile-action-btn,
+.profile-action-btn2 {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.profile-action-btn {
+  background-color: aliceblue;
+}
+
+.profile-action-btn2 {
+  background-color: #070707;
+  color: aliceblue;
+}
+
+.profile-action-btn:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Responsive CSS for Mobile */
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 15px; /* Reduce padding for smaller screens */
+    width: 95%; /* Slightly wider for better usability */
+    margin: 5% auto; /* Adjust margin for smaller screens */
+  }
+
+  .profile-card.expanded {
+    width: 95%; /* Slightly wider for better usability */
+  }
+
+  .close-icon {
+    top: 8px;
+    right: 8px;
+    font-size: 18px; /* Reduce icon size for mobile */
+  }
+
+  .profile-info p {
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  .profile-action-btn,
+  .profile-action-btn2 {
+    font-size: 14px; /* Reduce button font size for mobile */
+    padding: 8px; /* Reduce button padding for mobile */
+  }
+
+  input {
+    font-size: 12px; /* Reduce input font size for mobile */
+    padding: 6px; /* Reduce input padding for mobile */
+  }
+}

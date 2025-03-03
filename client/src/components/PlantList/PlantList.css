@@ -1,0 +1,27 @@
+.plant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+
+  /* Existing CSS */
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .plant-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plant-list {
+    gap: 5px;
+  }
+}

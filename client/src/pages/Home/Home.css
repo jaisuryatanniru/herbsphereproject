@@ -1,0 +1,184 @@
+/* General Section Styles */
+.category-section {
+  margin-bottom: 40px;
+}
+
+/* Category Header */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.category-header h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding-left: 16px;
+  flex: 1;
+}
+
+/* Plant Cards Row */
+.plant-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+/* Plant Card (4 per row on laptops) */
+.plant-card {
+  flex: 1 1 calc(25% - 24px); /* 4 cards per row */
+  max-width: calc(25% - 24px);
+  box-sizing: border-box;
+}
+
+/* More Button */
+.more-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.more-button:hover {
+  background-color: green;
+}
+
+/* Floating Icon */
+.floating-icon {
+  position: fixed;
+  bottom: clamp(10px, 3vw, 20px);
+  right: clamp(10px, 3vw, 20px);
+  background-color: #3ec8ee;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.floating-icon:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.iframe-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.iframe-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* 📱 Small Screens (Mobiles) */
+@media (max-width: 767px) {
+  .category-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .category-header h2 {
+    font-size: 20px;
+    padding-left: 0;
+    margin-bottom: 8px;
+  }
+
+  .more-button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .plant-cards-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .plant-card {
+    flex: 1 1 100%; /* 1 card per row on mobile */
+    max-width: 100%;
+  }
+
+  .iframe-modal-content {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* 🖥️ Medium Screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .category-header h2 {
+    font-size: 24px;
+    padding-left: 30px;
+  }
+
+  .more-button {
+    padding: 6px 12px;
+  }
+
+  .plant-cards-row {
+    gap: 12px;
+  }
+
+  .plant-card {
+    flex: 1 1 calc(50% - 24px); /* 2 cards per row on tablets */
+    max-width: calc(50% - 24px);
+  }
+}
+
+/* 🖥️ Large Screens (Laptops) */
+@media (min-width: 1200px) {
+  .category-header h2 {
+    font-size: 28px;
+    padding-left: 50px;
+  }
+
+  .plant-card {
+    flex: 1 1 calc(25% - 24px); /* 4 cards per row */
+    max-width: calc(25% - 24px);
+  }
+
+  .iframe-modal-content {
+    max-width: 700px;
+  }
+}
