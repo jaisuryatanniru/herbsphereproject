@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt.js');
+const bcrypt = require('bcryptjs');
 require('dotenv').config(); // Load environment variables
 const http = require('http');  // Required for WebSocket server
 const { Server } = require('socket.io');  // Socket.IO for real-time communication
