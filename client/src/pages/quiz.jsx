@@ -72,7 +72,7 @@ const Quiz = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:5000/api/quiz/submit",
+        "https://herbsphereproject-3.onrender.com/api/quiz/submit",
         { userId, answers: formattedAnswers },
         { headers: { Authorization: `Bearer ${token}` } }
       );
