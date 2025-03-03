@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaUserCircle, FaTimes } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Profile.css';
+import './profile.css';
 
 const Profile = () => {
   const [showPasswordFields, setShowPasswordFields] = useState(false);
