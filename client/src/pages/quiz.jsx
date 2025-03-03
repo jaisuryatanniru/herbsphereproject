@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./Quiz.css"; // Import the updated CSS file
+import "./quiz.css"; // Import the updated CSS file
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
