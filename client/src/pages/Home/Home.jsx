@@ -33,7 +33,7 @@ function NewHome() {
 
     // Load Jotform Bot script
     const script = document.createElement('script');
-    script.src = 'https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js';
+    script.src = 'https://cdn.jotfor.ms/agent/embedjs/0195565108af7428bafdbc3afecf931f0239/embed.js?skipWelcome=1&maximizable=1';
     script.async = true;
     script.onload = () => {
       window.AgentInitializer?.init({
