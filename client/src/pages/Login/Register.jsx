@@ -22,7 +22,7 @@ function Register() {
             })
             .catch(err => {
                 console.log('Frontend Error:', err);
-                alert("An error occurred. Please try again.");
+                alert("Email already existed.");
             });
     }
 
